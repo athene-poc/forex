@@ -1,6 +1,7 @@
 FROM node:13.3.0 AS compile-image
 
 RUN npm install -g yarn
+RUN npm install -g @angular/cli
 
 WORKDIR /opt/ng
 #COPY .npmrc package.json yarn.lock ./
